@@ -1,7 +1,7 @@
 function displayResult() {
   const currency1 = document.querySelector("#from").value;
   const currency2 = document.querySelector("#to").value;
-  const quantity = document.querySelector("#quantity").value;
+  const quantity = Number(document.querySelector("#quantity").value);
   const result = document.querySelector("#result");
   if (quantity === "") {
     alert("Invalid input");
