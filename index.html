@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Exchange</title>
+  </head>
+  <body>
+    <form>
+      <label for="from">From</label>
+      <select name="from" id="from">
+        <option value="USD">USD</option>
+        <option value="KRW">KRW</option>
+        <option value="CNY">CNY</option>
+        <option value="EUR">EUR</option>
+      </select>
+      <label for="to">To</label>
+      <select name="to" id="to">
+        <option value="KRW">KRW</option>
+        <option value="USD">USD</option>
+        <option value="CNY">CNY</option>
+        <option value="EUR">EUR</option>
+      </select>
+      <label for="quantitu">Quantity</label>
+      <input name="quantity" id="quantity" type="number" required />
+      <input
+        type="button"
+        value="Search"
+        id="search"
+        onclick="displayResult()"
+      />
+      <div id="result"></div>
+    </form>
+    <script src="scripts.js"></script>
+  </body>
+</html>
